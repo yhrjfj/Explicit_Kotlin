@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener(){
             // Explicit Intents
             var i = Intent(this, Activity2::class.java)
+            // Passing data between activities
+            i.putExtra("age", 30)
             startActivity(i)
         }
     }
